@@ -2,7 +2,8 @@ import * as THREE from "three";
 
 export type RowType = "forest" | "car" | "truck";
 
-export type Row = |{
+export type Row = 
+|{
     type: "forest";
     trees: { tileIndex: number; height: number}[];
 }
@@ -24,3 +25,5 @@ export type Row = |{
         color: THREE.ColorRepresentation;
     }[];
 };
+
+export type MoveDirection = "forward" | "backward" | "left" | "right";
